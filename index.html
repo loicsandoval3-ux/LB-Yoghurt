@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB Yoghurt — L'or blanc dans vos assiettes</title>
+    <meta name="description" content="LB Yoghurt : yaourt 100% naturel, frais et local. Fabriqué à Kolwezi sans conservateurs. Pour toute la famille.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================================
+         LOADER
+    ========================================= -->
+    <div id="loader" class="loader">
+        <div class="loader__inner">
+            <img src="logoprincipal.png" alt="LB Yoghurt" class="loader__logo">
+            <div class="loader__bar">
+                <div class="loader__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         NAVIGATION
+    ========================================= -->
+    <header class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#hero" class="nav__brand">
+                <img src="logoprincipal.png" alt="LB Yoghurt" class="nav__logo">
+            </a>
+            <nav class="nav__links" id="navLinks">
+                <a href="#produits" class="nav__link">Produits</a>
+                <a href="#pourquoi" class="nav__link">Pourquoi Nous</a>
+                <a href="#histoire" class="nav__link">Notre Histoire</a>
+                <a href="#famille" class="nav__link">Pour Vous</a>
+                <a href="#partenaires" class="nav__link">Partenaires</a>
+                <a href="#contact" class="nav__link">Contact</a>
+                <a href="https://wa.me/243828743815" target="_blank" rel="noopener" class="nav__cta">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Commander
+                </a>
+            </nav>
+            <button class="nav__burger" id="navBurger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION
+    ========================================= -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <img src="imagehero.png" alt="LB Yoghurt - Yaourt naturel premium" class="hero__img">
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__badge" data-animate="fade-down">
+                <span class="hero__badge-dot"></span>
+                100% Naturel · Sans Conservateurs
+            </div>
+            <h1 class="hero__title" data-animate="fade-up">
+                Le goût du naturel,<br>
+                <span class="hero__title-accent">sans compromis</span>
+            </h1>
+            <p class="hero__text" data-animate="fade-up" data-delay="0.2">
+                Découvrez un yaourt frais, onctueux et savoureux, fabriqué chaque jour à Kolwezi 
+                avec des ingrédients 100% naturels. Parce que votre famille mérite ce qu'il y a de meilleur.
+            </p>
+            <div class="hero__actions" data-animate="fade-up" data-delay="0.4">
+                <a href="https://wa.me/243828743815" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Commander sur WhatsApp
+                </a>
+                <a href="#produits" class="btn btn--outline btn--lg">
+                    Découvrir nos produits
+                </a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Défiler</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION PRODUITS
+    ========================================= -->
+    <section class="products" id="produits">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-header__label">Nos Produits</span>
+                <h2 class="section-header__title">Une gamme pensée<br>pour chaque envie</h2>
+                <p class="section-header__text">
+                    Quatre saveurs uniques, un même engagement : vous offrir le meilleur du yaourt 
+                    naturel, sans aucun compromis sur la qualité.
+                </p>
+            </div>
+            <div class="products__grid">
+                <!-- Naturel Pur -->
+                <div class="product-card" data-animate="fade-up" data-delay="0">
+                    <div class="product-card__image" style="--accent: #3AAA35; --accent-light: #e8f5e0;">
+                        <div class="product-card__badge">Essentiel</div>
+                        <img src="logopure.png" alt="LB Yoghurt Naturel Pur" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Naturel Pur</h3>
+                        <p class="product-card__benefit">La pureté à l'état brut. Onctueux, frais et sans artifice — le goût authentique du lait transformé avec soin.</p>
+                        <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20commander%20LB%20Yoghurt%20Naturel%20Pur" target="_blank" rel="noopener" class="product-card__cta">
+                            Commander
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Douceur Vanille -->
+                <div class="product-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="product-card__image" style="--accent: #F9B233; --accent-light: #fdf3dc;">
+                        <div class="product-card__badge" style="background: #F9B233;">Plaisir</div>
+                        <img src="logovanille.png" alt="LB Yoghurt Douceur Vanille" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Douceur Vanille</h3>
+                        <p class="product-card__benefit">Une caresse de vanille naturelle dans chaque cuillère. Doux, réconfortant — le plaisir sain de tous les jours.</p>
+                        <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20commander%20LB%20Yoghurt%20Douceur%20Vanille" target="_blank" rel="noopener" class="product-card__cta">
+                            Commander
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Coco Velours -->
+                <div class="product-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="product-card__image" style="--accent: #CA9E67; --accent-light: #f0e4d4;">
+                        <div class="product-card__badge" style="background: #CA9E67;">Plaisir</div>
+                        <img src="logococo.png" alt="LB Yoghurt Coco Velours" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Coco Velours</h3>
+                        <p class="product-card__benefit">L'exotisme à portée de cuillère. La douceur de la noix de coco mariée à l'onctuosité de notre yaourt frais.</p>
+                        <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20commander%20LB%20Yoghurt%20Coco%20Velours" target="_blank" rel="noopener" class="product-card__cta">
+                            Commander
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Fraîcheur Fraise -->
+                <div class="product-card" data-animate="fade-up" data-delay="0.3">
+                    <div class="product-card__image" style="--accent: #E8587A; --accent-light: #fde8ec;">
+                        <div class="product-card__badge" style="background: #E8587A;">Fruité</div>
+                        <img src="logofraise.png" alt="LB Yoghurt Fraîcheur Fraise" loading="lazy">
+                    </div>
+                    <div class="product-card__content">
+                        <h3 class="product-card__name">Fraîcheur Fraise</h3>
+                        <p class="product-card__benefit">Un éclat de fraîcheur fruitée. La fraise dans toute sa gourmandise, pour un moment de plaisir naturel et vif.</p>
+                        <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20commander%20LB%20Yoghurt%20Fra%C3%AEcheur%20Fraise" target="_blank" rel="noopener" class="product-card__cta">
+                            Commander
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION POURQUOI LB YOGHURT
+    ========================================= -->
+    <section class="why" id="pourquoi">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-header__label">Nos Engagements</span>
+                <h2 class="section-header__title">Pourquoi choisir<br>LB Yoghurt ?</h2>
+                <p class="section-header__text">
+                    Nous ne faisons pas simplement du yaourt. Nous avons bâti une promesse 
+                    autour de quatre piliers que nous ne négocions jamais.
+                </p>
+            </div>
+            <div class="why__grid">
+                <div class="why-card" data-animate="fade-up" data-delay="0">
+                    <div class="why-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 12l3 3 5-6"/></svg>
+                    </div>
+                    <h3 class="why-card__title">100% Naturel</h3>
+                    <p class="why-card__text">Zéro conservateur, zéro additif superflu. Nos ingrédients sont simples, traçables et sélectionnés avec exigence. La liste est courte — c'est notre meilleur argument.</p>
+                </div>
+                <div class="why-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="why-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="why-card__title">Hygiène Irréprochable</h3>
+                    <p class="why-card__text">Notre atelier respecte des standards stricts de propreté et de sécurité alimentaire. Chaque pot est le fruit d'un processus maîtrisé de bout en bout.</p>
+                </div>
+                <div class="why-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="why-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3 class="why-card__title">Production Locale</h3>
+                    <p class="why-card__text">Fabriqué à Kolwezi, pour Kolwezi. Pas de semaines de transport, pas de stockage prolongé. De notre atelier à votre table, la fraîcheur est garantie.</p>
+                </div>
+                <div class="why-card" data-animate="fade-up" data-delay="0.3">
+                    <div class="why-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                    </div>
+                    <h3 class="why-card__title">Bon pour la Santé</h3>
+                    <p class="why-card__text">Un yaourt frais et naturel, c'est bon pour la digestion, pour l'énergie et pour le moral. Un geste simple pour prendre soin de toute votre famille, chaque jour.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION NOTRE HISTOIRE
+    ========================================= -->
+    <section class="story" id="histoire">
+        <div class="container">
+            <div class="story__layout">
+                <div class="story__content" data-animate="fade-right">
+                    <span class="section-header__label">Notre Histoire</span>
+                    <h2 class="story__title">Né d'une conviction simple</h2>
+                    <div class="story__divider"></div>
+                    <p class="story__lead">
+                        « À Kolwezi, les familles méritaient mieux que de choisir entre des yaourts douteux et des importés pleins de conservateurs. »
+                    </p>
+                    <p class="story__text">
+                        Tout commence en juin 2025, d'un constat frappant. Sur le marché de Kolwezi, les consommateurs étaient pris au piège : d'un côté, des yaourts artisanaux souvent naturels mais sans véritable garantie d'hygiène. De l'autre, des produits importés, attractifs en apparence, mais chargés de conservateurs.
+                    </p>
+                    <p class="story__text">
+                        Face à ce dilemme, une conviction est née : il devait être possible d'offrir un yaourt qui ne sacrifie ni la santé, ni le goût, ni la sécurité. LB Yoghurt est né de cette exigence — de cette quête d'excellence.
+                    </p>
+                    <p class="story__text">
+                        Le nom LB vient de « Luindi Baruani », qui signifie « le chasseur » en langue d'origine burundaise. Ce nom porte en lui une mission : chasser le compromis, pour ne garder que le meilleur.
+                    </p>
+                    <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20en%20savoir%20plus%20sur%20LB%20Yoghurt" target="_blank" rel="noopener" class="btn btn--primary">
+                        Échangeons ensemble
+                    </a>
+                </div>
+                <div class="story__visual" data-animate="fade-left">
+                    <div class="story__image-wrapper">
+                        <img src="sectionmarque.png" alt="L'histoire de LB Yoghurt" loading="lazy">
+                        <div class="story__float-card">
+                            <span class="story__float-number">2025</span>
+                            <span class="story__float-label">Année de création</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION POUR QUI
+    ========================================= -->
+    <section class="family" id="famille">
+        <div class="family__bg">
+            <img src="sectionfamille.png" alt="Famille LB Yoghurt" loading="lazy">
+            <div class="family__overlay"></div>
+        </div>
+        <div class="container">
+            <div class="family__content" data-animate="fade-up">
+                <span class="section-header__label section-header__label--light">Pour Vous</span>
+                <h2 class="family__title">Fait pour ceux<br>qui comptent le plus</h2>
+                <p class="family__text">
+                    LB Yoghurt, c'est le yaourt des petits déjeuners en famille, des goûters après l'école, 
+                    des moments de partage autour de la table. Pensé pour les mamans qui veulent le meilleur, 
+                    pour les enfants qui méritent du vrai, et pour tous ceux qui croient qu'un produit sain 
+                    ne devrait jamais être un luxe.
+                </p>
+                <div class="family__tags">
+                    <span class="family__tag">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        Pour toute la famille
+                    </span>
+                    <span class="family__tag">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        Au quotidien
+                    </span>
+                    <span class="family__tag">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                        Pour votre santé
+                    </span>
+                </div>
+                <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20commander%20LB%20Yoghurt%20pour%20ma%20famille" target="_blank" rel="noopener" class="btn btn--white btn--lg">
+                    Offrez le meilleur à votre famille
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION MARQUE / QUALITÉ
+    ========================================= -->
+    <section class="quality" id="qualite">
+        <div class="container">
+            <div class="quality__layout">
+                <div class="quality__image" data-animate="fade-right">
+                    <img src="sectionmarque.png" alt="Qualité LB Yoghurt" loading="lazy">
+                </div>
+                <div class="quality__content" data-animate="fade-left">
+                    <span class="section-header__label">Notre Qualité</span>
+                    <h2 class="quality__title">La qualité n'est pas<br>un argument. C'est un fait.</h2>
+                    <div class="quality__divider"></div>
+                    <p class="quality__text">
+                        Chez LB Yoghurt, ce que vous voyez sur l'emballage correspond exactement à ce qui se trouve dans le pot. 
+                        Notre processus de fabrication est transparent, nos ingrédients sont traçables, et notre engagement 
+                        envers l'hygiène est total.
+                    </p>
+                    <div class="quality__features">
+                        <div class="quality__feature">
+                            <div class="quality__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Ingrédients sélectionnés</strong>
+                                <p>Du lait frais local, des fruits naturels, rien de superflu.</p>
+                            </div>
+                        </div>
+                        <div class="quality__feature">
+                            <div class="quality__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Atelier aux normes strictes</strong>
+                                <p>Un environnement de production propre et contrôlé.</p>
+                            </div>
+                        </div>
+                        <div class="quality__feature">
+                            <div class="quality__feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Chaîne de froid respectée</strong>
+                                <p>Du lieu de fabrication jusqu'à votre main, le froid ne coupe jamais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/243828743815" target="_blank" rel="noopener" class="btn btn--primary">
+                        En savoir plus
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION PARTENAIRES / REVENDEURS
+    ========================================= -->
+    <section class="partners" id="partenaires">
+        <div class="partners__bg">
+            <img src="partenaires.png" alt="Devenir partenaire LB Yoghurt" loading="lazy">
+            <div class="partners__overlay"></div>
+        </div>
+        <div class="container">
+            <div class="partners__content" data-animate="fade-up">
+                <span class="section-header__label section-header__label--light">Opportunité</span>
+                <h2 class="partners__title">Devenez partenaire<br>LB Yoghurt</h2>
+                <p class="partners__text">
+                    Rejoignez un réseau de distribution en pleine croissance. LB Yoghurt, c'est un produit 
+                    qui se vend vite, des clients qui reviennent, et une marque qui vous accompagne.
+                </p>
+                <div class="partners__advantages">
+                    <div class="partners__advantage" data-animate="fade-up" data-delay="0">
+                        <div class="partners__advantage-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                        </div>
+                        <h4>Rentabilité attractive</h4>
+                        <p>Des marges intéressantes de 20 à 25% et une rotation rapide des stocks. Un produit que vos clients redemandent.</p>
+                    </div>
+                    <div class="partners__advantage" data-animate="fade-up" data-delay="0.1">
+                        <div class="partners__advantage-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h4>Qualité garantie</h4>
+                        <p>Un produit 100% naturel, frais et fiable. Pas de risque de plainte, pas de produit douteux dans votre commerce.</p>
+                    </div>
+                    <div class="partners__advantage" data-animate="fade-up" data-delay="0.2">
+                        <div class="partners__advantage-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                        </div>
+                        <h4>Accompagnement complet</h4>
+                        <p>Support marketing, affiches, suivi régulier et réapprovisionnement ponctuel. On grandit ensemble.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/243828743815?text=Bonjour%2C%20je%20souhaite%20devenir%20partenaire%20%2F%20revendeur%20LB%20Yoghurt" target="_blank" rel="noopener" class="btn btn--white btn--lg">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Devenir partenaire maintenant
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SECTION CONTACT
+    ========================================= -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-header__label">Contact</span>
+                <h2 class="section-header__title">Parlons ensemble</h2>
+                <p class="section-header__text">
+                    Une question, une commande ou un partenariat ? Nous sommes là pour vous. 
+                    Contactez-nous directement — nous répondons sous 24h.
+                </p>
+            </div>
+            <div class="contact__grid">
+                <a href="https://wa.me/243828743815" target="_blank" rel="noopener" class="contact-card contact-card--wa" data-animate="fade-up" data-delay="0">
+                    <div class="contact-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </div>
+                    <h3 class="contact-card__title">WhatsApp</h3>
+                    <p class="contact-card__info">Écrivez-nous directement</p>
+                    <span class="contact-card__link">Ouvrir WhatsApp →</span>
+                </a>
+                <a href="tel:+243837872894" class="contact-card" data-animate="fade-up" data-delay="0.1">
+                    <div class="contact-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <h3 class="contact-card__title">Téléphone</h3>
+                    <p class="contact-card__info">+243 837 872 894</p>
+                    <p class="contact-card__info">+243 828 743 815</p>
+                </a>
+                <a href="mailto:contact@lbcompany.com" class="contact-card" data-animate="fade-up" data-delay="0.2">
+                    <div class="contact-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                    </div>
+                    <h3 class="contact-card__title">Email</h3>
+                    <p class="contact-card__info">contact@lbcompany.com</p>
+                </a>
+                <div class="contact-card" data-animate="fade-up" data-delay="0.3">
+                    <div class="contact-card__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3AAA35" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3 class="contact-card__title">Adresse</h3>
+                    <p class="contact-card__info">Arrêt Impala, Q. Dilungu</p>
+                    <p class="contact-card__info">Kolwezi, RDC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="logoprincipal.png" alt="LB Yoghurt" class="footer__logo">
+                    <p class="footer__tagline">L'or blanc dans vos assiettes</p>
+                    <p class="footer__desc">
+                        Yaourt 100% naturel, frais et local. Fabriqué chaque jour à Kolwezi avec amour et exigence.
+                    </p>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Navigation</h4>
+                    <a href="#produits" class="footer__link">Nos Produits</a>
+                    <a href="#pourquoi" class="footer__link">Pourquoi Nous</a>
+                    <a href="#histoire" class="footer__link">Notre Histoire</a>
+                    <a href="#famille" class="footer__link">Pour Vous</a>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Contact</h4>
+                    <a href="tel:+243837872894" class="footer__link">+243 837 872 894</a>
+                    <a href="tel:+243828743815" class="footer__link">+243 828 743 815</a>
+                    <a href="mailto:contact@lbcompany.com" class="footer__link">contact@lbcompany.com</a>
+                    <a href="https://wa.me/243828743815" target="_blank" rel="noopener" class="footer__link">WhatsApp</a>
+                </div>
+                <div class="footer__links-group">
+                    <h4 class="footer__heading">Produits</h4>
+                    <a href="https://wa.me/243828743815?text=Commande%20Naturel%20Pur" target="_blank" rel="noopener" class="footer__link">Naturel Pur</a>
+                    <a href="https://wa.me/243828743815?text=Commande%20Douceur%20Vanille" target="_blank" rel="noopener" class="footer__link">Douceur Vanille</a>
+                    <a href="https://wa.me/243828743815?text=Commande%20Coco%20Velours" target="_blank" rel="noopener" class="footer__link">Coco Velours</a>
+                    <a href="https://wa.me/243828743815?text=Commande%20Fra%C3%AEcheur%20Fraise" target="_blank" rel="noopener" class="footer__link">Fraîcheur Fraise</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 LB Yoghurt — Tous droits réservés.</p>
+                <p class="footer__credit">Site web créé par <strong>TOS</strong> (Trust Operating System) — <a href="tel:+243840716890">+243 840 716 890</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         FLOATING WHATSAPP BUTTON
+    ========================================= -->
+    <a href="https://wa.me/243828743815" target="_blank" rel="noopener" class="wa-float" id="waFloat" aria-label="Contacter sur WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
